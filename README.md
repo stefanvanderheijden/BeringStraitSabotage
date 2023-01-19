@@ -31,24 +31,25 @@ We use pipenv as a package manager (such as npm for nodejs) to manage our python
 3. Install pipenv `pip install pipenv`
 4. Add pipenv (and other python packages) to [system path](https://realpython.com/add-python-to-path/).
 5. run `pipenv` to check if pipenv is working.
+6. If it is not working but installation was successfull, the system path variable needs to be updated (see above). A work-around is to use pipenv with the command `python3 -m pipenv <command>` This loads pipenv as a python module.
 
 ### Usage
 
 To use pipenv during development, follow these steps
 
 1. Enable the virtual environment `pipenv shell`
-2. Make sure vs code uses the virtual environment as interpreter. ctrl + shift + p -> `Python: Select Interpreter` -> select virtual environment
+2. Make sure vs code uses the virtual environment as interpreter. ctrl + shift + p -> `Python: Select Interpreter` -> select virtual environment.
+3. Make sure you are in the server directory `cd ./server`
+4. run `pipenv install --dev` to install the correct dependancies.
 
 ### Using pipenv in server
 
 To develop on the server side, use pipenv to install the correct packages
 
-2. Make sure you are in the server directory `cd ./server`
-3. run `pipenv install --dev` This installs the correct dependancies.
-4. When you are ready to go to production, lock the pipenv file `pipenv lock`
-5. Git push -> pull everything on the server hardware
-6. Install the dependancies for production with `pipenv install --ignore-pipfile`
-7. For more information [see this documentation](https://realpython.com/pipenv-guide/)
+1. When you are ready to go to production, lock the pipenv file `pipenv lock`
+2. Git push -> pull everything on the server hardware
+3. Install the dependancies for production with `pipenv install --ignore-pipfile`
+4. For more information [see this documentation](https://realpython.com/pipenv-guide/)
 
 ## Flask
 
