@@ -20,14 +20,6 @@
 
 # Server-side
 
-## Flask
-
-1. Use flask run to run the dev server of flask
-
-## PysonDB
-
-A very light-weigth database using a json file on the server side. Visit [this link](https://dev.to/fredysomy/pysondb-a-json-based-lightweight-database-for-python-ija) for more information and usage.
-
 ## Pipenv
 
 ### Installation
@@ -52,12 +44,23 @@ To use pipenv during development, follow these steps
 To develop on the server side, use pipenv to install the correct packages
 
 2. Make sure you are in the server directory `cd ./server`
-3. run `pipenv install --dev`
-   This installs the correct dependancies.
+3. run `pipenv install --dev` This installs the correct dependancies.
 4. When you are ready to go to production, lock the pipenv file `pipenv lock`
-5. Git pull everything on the server hardware
+5. Git push -> pull everything on the server hardware
 6. Install the dependancies for production with `pipenv install --ignore-pipfile`
 7. For more information [see this documentation](https://realpython.com/pipenv-guide/)
+
+## Flask
+
+1. Use flask run to run the dev server of flask
+2. `cd ./server`
+3. `flask run`
+
+## PysonDB
+
+(I'm not sure if this is the right tool to use, it seems to be very simple, maybe a more advanced SQLite or MySQL is better suited)
+
+A very light-weigth database using a json file on the server side. Visit [this link](https://dev.to/fredysomy/pysondb-a-json-based-lightweight-database-for-python-ija) for more information and usage.
 
 # About
 
