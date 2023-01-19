@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 pysondb = "==1.6.7"
+flask = "*"
+flask-cors = "*"
+python-dotenv = "*"
 
 [dev-packages]
 

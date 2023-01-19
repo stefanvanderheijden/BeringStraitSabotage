@@ -20,6 +20,14 @@
 
 # Server-side
 
+## Flask
+
+1. Use flask run to run the dev server of flask
+
+## PysonDB
+
+A very light-weigth database using a json file on the server side. Visit [this link](https://dev.to/fredysomy/pysondb-a-json-based-lightweight-database-for-python-ija) for more information and usage.
+
 ## Pipenv
 
 ### Installation
@@ -31,6 +39,13 @@ We use pipenv as a package manager (such as npm for nodejs) to manage our python
 3. Install pipenv `pip install pipenv`
 4. Add pipenv (and other python packages) to [system path](https://realpython.com/add-python-to-path/).
 5. run `pipenv` to check if pipenv is working.
+
+### Usage
+
+To use pipenv during development, follow these steps
+
+1. Enable the virtual environment `pipenv shell`
+2. Make sure vs code uses the virtual environment as interpreter. ctrl + shift + p -> `Python: Select Interpreter` -> select virtual environment
 
 ### Using pipenv in server
 
