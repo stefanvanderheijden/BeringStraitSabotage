@@ -72,3 +72,7 @@ A Bering Strait crossing is a hypothetical bridge or tunnel that would span the 
 With the two Diomede Islands between the peninsulas, the Bering Strait could be spanned by a bridge or tunnel.
 
 There have been several proposals for a Bering Strait crossing made by various individuals and media outlets. The names used for them include "The Intercontinental Peace Bridge" and "Eurasia–America Transport Link".[1] Tunnel names have included "TKM–World Link" and "AmerAsian Peace Tunnel". In April 2007, Russian government officials told the press that the Russian government would back a US$65 billion plan by a consortium of companies to build a Bering Strait tunnel.[2]
+
+# Ideas
+
+https://www.npmjs.com/package/vue-emoji-picker
