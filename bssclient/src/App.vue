@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <appHeader title="Bering Strait Sabotage" />
-    <router-link to="/">Login</router-link>
-    <router-link to="/game">Game</router-link>
+    <!-- <router-link to="/">Login</router-link>
+    <router-link to="/game">Game</router-link> -->
     <router-view />
   </div>
 </template>
