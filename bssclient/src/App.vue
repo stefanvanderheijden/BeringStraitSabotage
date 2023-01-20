@@ -14,6 +14,32 @@ export default {
   components: {
     appHeader,
   },
+  data: function () {
+    return {
+      players: [
+        {
+          id: 1,
+          name: "Player 1",
+          emoticon: "😀",
+        },
+        {
+          id: 2,
+          name: "Player 2",
+          emoticon: "😀",
+        },
+        {
+          id: 3,
+          name: "Player 3",
+          emoticon: "😀",
+        },
+        {
+          id: 4,
+          name: "Player 4",
+          emoticon: "😀",
+        },
+      ],
+    };
+  },
 };
 </script>
 
