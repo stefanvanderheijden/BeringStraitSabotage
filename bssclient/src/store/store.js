@@ -2,6 +2,11 @@ import { createStore } from "vuex";
 
 export const store = createStore({
   state: {
+    infoBox: {
+      defaultMessage: "<< Click a block to review its details >>",
+      message: "<< Click a block to review its details >>",
+      focussedID: 0,
+    },
     players: [
       {
         id: 1,
@@ -98,37 +103,37 @@ export const store = createStore({
     democratic_lane: [
       {
         position: 1,
-        action: 0,
+        special: false,
         description: "No special action for this position",
-        activated: false,
+        activated: true,
       },
       {
         position: 2,
-        action: 0,
+        special: false,
         description: "No special action for this position",
-        activated: false,
+        activated: true,
       },
       {
         position: 3,
-        action: 0,
+        special: false,
         description: "No special action for this position",
         activated: false,
       },
       {
         position: 4,
-        action: 0,
+        special: false,
         description: "No special action for this position",
         activated: false,
       },
       {
         position: 5,
-        action: 0,
+        special: false,
         description: "No special action for this position",
         activated: false,
       },
       {
         position: 6,
-        action: 1,
+        special: true,
         description: "When this position is played, the democrats win!",
         activated: false,
       },
@@ -136,38 +141,42 @@ export const store = createStore({
     fascist_lane: [
       {
         position: 1,
-        action: 0,
+        special: false,
         description: "No special action for this position",
-        activated: false,
+        activated: true,
       },
       {
         position: 2,
-        action: 0,
+        special: false,
         description: "No special action for this position",
-        activated: false,
+        activated: true,
       },
       {
         position: 3,
-        action: 2,
+        special: true,
         description: "The President examines the top three cards of the deck",
         activated: false,
       },
       {
         position: 4,
-        action: 3,
+        special: true,
         description: "The President must kill a player",
         activated: false,
       },
       {
         position: 5,
-        action: 4,
+        special: true,
         description:
           "The President must kill a player and Veto power is unlocked",
         activated: false,
       },
     ],
   },
-  mutations: {},
+  mutations: {
+    setNewMessage(state, message) {
+      this.state.infoBox.message = message;
+    },
+  },
   actions: {
     // ...
   },

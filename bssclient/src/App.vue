@@ -54,11 +54,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .container {
-  max-width: 500px;
+  max-width: 900px;
   margin: 0px auto;
   overflow: auto;
   min-height: 300px;
-  padding: 30px;
+  background-color: #d2dadf;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .btn {
   display: inline-block;

@@ -1,32 +1,31 @@
 <template>
   <header>
     <h1>{{ title }}</h1>
-    <appButton text="Add Task" color="black" />
   </header>
 </template>
 
 <script>
-import appButton from "./appButton.vue";
 export default {
   name: "appHeader",
   props: {
     title: String,
   },
-  components: {
-    appButton,
-  },
+  components: {},
 };
 </script>
 
 <style scoped>
+@import url("https://fonts.cdnfonts.com/css/oleo-script");
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  font-family: "Oleo Script", sans-serif;
+  background-color: rgb(34, 56, 77);
 }
 
 h1 {
-  font-size: medium;
+  font-size: 35px;
+  color: rgb(210, 218, 223);
 }
 </style>
