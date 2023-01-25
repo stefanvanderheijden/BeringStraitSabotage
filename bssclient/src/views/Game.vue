@@ -27,19 +27,24 @@ export default {
     cardLane,
     infoBox,
   },
+  methods: {
+    setNewMessage() {
+      var message = "TEST";
+
+      // message += this.$store.infoBox.defaultMessage;
+      this.$store.commit("setNewMessage", message);
+    },
+  },
 };
 </script>
 
 <style scoped>
 .cardLanes {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 150px;
-  background-image: url("../assets/iceCold.jpg");
-  background-size: cover;
+
+  padding: 10px;
 }
 </style>

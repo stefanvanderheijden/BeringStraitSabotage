@@ -1,9 +1,10 @@
 <template>
   <div class="playerField">
+    <div class="title">--> The Construction Crew &lt;--</div>
     <div
-      class="player-box"
       v-bind:key="player.id"
       v-for="player in $store.state.players"
+      class="player"
     >
       <playerBox :player="player" />
     </div>
@@ -22,19 +23,31 @@ export default {
 </script>
 
 <style scoped>
-.player-box {
-  background: lightgrey;
-  border-radius: 5px;
-  min-width: 20%;
-
-  margin: 5px;
+.title {
+  text-shadow: 0 0 5px #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(210, 218, 223);
+  font-size: 2rem;
+  text-align: center;
+  font: 0.7rem Inconsolata, monospace;
 }
 .playerField {
-  border: 1px solid black;
+  background-color: rgb(34, 56, 77);
+  margin: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 35px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+  border: 2px solid white;
+}
+
+.player {
+  width: 100%;
+  margin-top: 2px;
 }
 </style>

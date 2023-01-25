@@ -54,12 +54,16 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .container {
-  max-width: 900px;
+  max-width: 500px;
+  height: 100vh;
   margin: 0px auto;
   overflow: auto;
   min-height: 300px;
   background-color: #d2dadf;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  padding-bottom: 50px;
+  background-image: url("./assets/iceCold.jpg");
+  background-size: cover;
 }
 .btn {
   display: inline-block;

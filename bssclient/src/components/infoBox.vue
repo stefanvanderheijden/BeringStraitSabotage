@@ -15,16 +15,11 @@ export default {
 <style scoped>
 .infoBox {
   white-space: pre-wrap;
-  border: 2px solid white;
-
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
+  outline: 2px solid white;
+  margin: 10px 2px;
   background-color: rgb(34, 56, 77);
   color: rgb(210, 218, 223);
-  /* background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%); */
-  width: 70%;
-  height: 60px;
+  height: 3rem;
   overflow: hidden;
   padding: 0.5rem;
   text-align: left;
@@ -36,8 +31,5 @@ export default {
 ::selection {
   background: #0080ff;
   text-shadow: none;
-}
-pre {
-  margin: 0;
 }
 </style>
