@@ -1,14 +1,13 @@
 <template>
   <div
     class="card"
-    :class="{ focus: isFocus }"
-    :style="style"
+    :class="{ focus: isFocus, striped: card.activated }"
     @click="setNewMessage()"
     @focus="handleFocus"
     @focusout="handleFocusOut"
     tabindex="-1"
   >
-    <div v-if="card.special">... !</div>
+    <div v-if="card.special">...!</div>
   </div>
 </template>
 
@@ -45,29 +44,39 @@ export default {
       this.isFocus = false;
     },
   },
-  computed: {
-    style() {
-      return {
-        backgroundColor: this.card.activated
-          ? this.primaryColor
-          : this.secondaryColor,
-      };
-    },
-  },
 };
 </script>
 
 <style scoped>
 .card {
-  cursor: pointer;
+  height: 25px;
   text-align: center;
-  height: 24px;
+  color: var(--text-color);
+  cursor: pointer;
   width: 100%;
-  margin: 0px 2px;
-  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
+  border: var(--line-thick);
+  margin: 4px;
+}
+
+.nonStriped {
+  background-image: none;
+}
+
+.striped {
+  background-image: linear-gradient(
+    -45deg,
+    rgb(255, 255, 255) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgb(255, 255, 255) 50%,
+    rgb(255, 255, 255) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 6px 6px;
 }
 
 .focus {
-  outline: 2px solid white;
+  outline: 1px solid white;
 }
 </style>

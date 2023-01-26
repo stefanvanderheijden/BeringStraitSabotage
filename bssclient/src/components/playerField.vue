@@ -33,7 +33,7 @@ export default {
   font: 0.7rem Inconsolata, monospace;
 }
 .playerField {
-  background-color: rgb(34, 56, 77);
+  background-color: #5787c6;
   margin: 5px;
   padding-left: 20px;
   padding-right: 20px;

@@ -10,10 +10,9 @@
       primaryColor="#8D5723"
       secondaryColor="#C2946F"
     />
-    <infoBox />
+    <infoBox></infoBox>
+    <playerField> </playerField>
   </div>
-
-  <playerField> </playerField>
 </template>
 
 <script>

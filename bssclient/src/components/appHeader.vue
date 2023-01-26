@@ -1,6 +1,7 @@
 <template>
   <header>
-    <h1>{{ title }}</h1>
+    <div class="left">{{ title }}</div>
+    <div class="right">{{ subtitle }}</div>
   </header>
 </template>
 
@@ -9,23 +10,31 @@ export default {
   name: "appHeader",
   props: {
     title: String,
+    subtitle: String,
   },
   components: {},
 };
 </script>
 
 <style scoped>
-@import url("https://fonts.cdnfonts.com/css/oleo-script");
 header {
-  padding: 10px;
-  text-align: center;
-  width: 100%;
-  font-family: "Oleo Script", sans-serif;
-  background-color: rgb(34, 56, 77);
+  padding-top: 5px;
+  position: relative;
+  font-family: var(--computer-font);
+  color: var(--text-color);
+  font-size: 0.5rem;
+  height: 15px;
 }
 
-h1 {
-  font-size: 35px;
-  color: rgb(210, 218, 223);
+.right {
+  position: absolute;
+  text-align: right;
+  right: 10px;
+}
+
+.left {
+  position: absolute;
+  text-align: left;
+  left: 10px;
 }
 </style>
